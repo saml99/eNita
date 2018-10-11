@@ -17,7 +17,7 @@ namespace HelpDeskBot.Dialogs
 
         public AccessFailureDialog(BuildFormDelegate<AccessFailure> newAccessFailure)
         {
-            this._newAccessFailure = newAccessFailure;
+            _newAccessFailure = newAccessFailure;
         }
 
         public async Task StartAsync(IDialogContext context)

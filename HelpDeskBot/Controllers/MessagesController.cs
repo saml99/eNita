@@ -20,7 +20,7 @@ namespace HelpDeskBot
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new LUISDialog());
+                await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
             }
             else
             {

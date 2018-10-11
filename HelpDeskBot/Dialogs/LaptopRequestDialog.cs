@@ -17,7 +17,7 @@ namespace HelpDeskBot.Dialogs
 
         public LaptopRequestDialog(BuildFormDelegate<NewLaptop> newLaptopRequest)
         {
-            this._newLaptopRequest = newLaptopRequest;
+            _newLaptopRequest = newLaptopRequest;
         }
 
         public async Task StartAsync(IDialogContext context)

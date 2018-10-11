@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="StorageConnectionString-Web.config Connection String" description="StorageConnectionString Connection String used in web.config by the application to access the database." defaultValue="DefaultEndpointsProtocol=https;AccountName=samlewis;AccountKey=7Rl0BznfL+v12ol93PIMsfIspjpRZ2KJEPt0UM3kZrkVI2whioiy7MyYlaL6Wjn4TajKdHsDRRF+H7G3rxR8UA==;EndpointSuffix=core.windows.net" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\sam\.lewis\\source\\repos\\HelpDeskBot\\eNita\\HelpDeskBot\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='StorageConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

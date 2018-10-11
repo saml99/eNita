@@ -11,14 +11,16 @@ namespace HelpDeskBot.Dialogs
     {
         public Task StartAsync(IDialogContext context)
         {
-            context.Call(new LUISDialog(), ResumeAfterLuisDialog);
+            //context.PostAsync("Hi");
+            context.Call(new LUISDialog(), MessageReceivedAsync);
+            context.PostAsync("thanks");
             //context.Wait(MessageReceivedAsync);
-
             return Task.CompletedTask;
         }
 
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
         {
+            
             var message = await result;
             context.Done(message);
             //var activity = await result as Activity;
@@ -32,11 +34,6 @@ namespace HelpDeskBot.Dialogs
             //
             //context.Wait(MessageReceivedAsync);
 
-        }
-
-        private async Task ResumeAfterLuisDialog(IDialogContext context, IAwaitable<object> result)
-        {
-            context.Wait(MessageReceivedAsync);
         }
     }
 }
